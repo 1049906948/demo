@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>合思科技</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div id='app'>
+    <!-- 头部 -->
+    <div class="w title">
+        <ul class="title-ul">
+            <li><img src="./images/logo.png" alt=""></li>
+            <li>
+                <input type="text" placeholder="输入您要搜索的关键词"><span class="search">搜索</span>
+                <a href="#" class="mr3">服务定制</a>
+                <a href="#">登录/注册</a>
+            </li>
+        </ul>
+    </div>
+    <!-- 导航栏 -->
+    <div class="nav">
+        <div class="w">
+            <ul class="nav-ul" >
+                    <li class="test" v-for="(item,index) in dataList"><a href="#">{{item.name}}</a>
+                    </li>
+                <!-- <li><a href="#">{{msg}}</a></li> -->
+                <!-- <i>|</i> -->
+                <!-- <li><a href="#">找名校</a></li>
+                <i>|</i>
+                <li><a href="#">找名师</a></li>
+                <i>|</i>
+                <li><a href="#">找好课</a></li>
+                <i>|</i>
+                <li><a href="#">合作校联盟</a></li>
+                <i>|</i>
+                <li><a href="#">课程专家联盟</a></li>
+                <i>|</i>
+                <li><a href="#">教育咨询联盟</a></li>
+                <i>|</i>
+                <li><a href="#">教育咨询</a></li>
+                <i>|</i>
+                <li><a href="#">关于我们</a></li> -->
+            </ul>
+        </div>
+    </div>
+    <!-- 轮播图 -->
+    <div class="banner">
+
+    </div>
+    <!-- 热门老师 -->
+    <div class="w teacher">
+        <ul class="teacher-ul">
+            <li class="dynamic">
+                <img src="./images/社区.png" alt="">
+                <p>名&nbsp;师&nbsp;动&nbsp;态&nbsp;</p>
+                <div class="sharing">SHARING DYNAMLCS</div>
+                <div class="more">MORE...</div>
+            </li>
+
+            <li class="mod">
+                <img class="img" src="images/01.png">
+                <div class="item"><span class="fan">FANFAN 老师</span><span class="time">10月24日12：12</span></div>
+                <div class="text">陈建国，山大附中数学名师，无意于功，讲台，躬耕于教坛一线二十载</div>
+                <div class="pic"><img src="images/04.png" alt=""></div>
+            </li>
+
+            <li class="mod">
+                <img class="img" src="images/01.png">
+                <div class="item"><span class="fan">FANFAN 老师</span><span class="time">10月24日12：12</span></div>
+                <div class="text">陈建国，山大附中数学名师，无意于功，讲台，躬耕于教坛一线二十载</div>
+                <div class="pic"><img src="images/04.png" alt=""></div>
+            </li>
+
+            <li class="mod">
+                <img class="img" src="images/01.png">
+                <div class="item"><span class="fan">FANFAN 老师</span><span class="time">10月24日12：12</span></div>
+                <div class="text">陈建国，山大附中数学名师，无意于功，讲台，躬耕于教坛一线二十载</div>
+                <div class="pic"><img src="images/04.png" alt=""></div>
+            </li>
+        </ul>
+
+        <div class="ff">
+            <div class="border"></div>
+            <div class="border2"></div>
+            <h1>热•门•老•师</h1>
+            <div class="cou">COURSES</div>
+            <div class="much">更多老师 >></div>
+
+        </div>
+
+        <ul class="img-ul">
+            <li><img src="images/03.png"></li>
+            <li><img src="images/03.png"></li>
+            <li><img src="images/03.png"></li>
+            <li><img src="images/03.png"></li>
+        </ul>
+    </div>
+    <!-- 热门课程 -->
+    <div class="course">
+        <div class="w">
+            <h1>热•门•课•程</h1>
+            <div class="cou">COURSES</div>
+            <div class="much">更多课程 >></div>
+            <ul class="course-ul">
+                <li class="item">管理类</li>
+                <li>学科类</li>
+                <li>课堂类</li>
+                <li>备考类</li>
+            </ul>
+            <ul class="course-img">
+                <li><img src="./images/ss_09.png" alt=""></li>
+                <li><img src="./images/ss_09.png" alt=""></li>
+                <li><img src="./images/ss_09.png" alt=""></li>
+                <li><img src="./images/ss_09.png" alt=""></li>
+            </ul>
+            <ul class="course-img">
+                <li><img src="./images/ss_09.png" alt=""></li>
+                <li><img src="./images/ss_09.png" alt=""></li>
+                <li><img src="./images/ss_09.png" alt=""></li>
+                <li><img src="./images/ss_09.png" alt=""></li>
+            </ul>
+        </div>
+    </div>
+    <!-- 特色学校 -->
+    <div class="w school">
+        <div class="ff">
+            <div class="border"></div>
+            <div class="border2"></div>
+            <h1>热•门•老•师</h1>
+            <div class="cou">COURSES</div>
+            <div class="much">更多老师 >></div>
+        </div>
+    </div>
+
+    <!-- 教育咨询 -->
+    <div class="advisory">
+        <div class="w">
+            <h1>教•育•咨•询</h1>
+            <ul class="advisory-ul">
+                <li class="red">图文咨询</li>
+                <li class="Placeholder"></li>
+                <li>视频咨询</li>
+            </ul>
+            <ul class="advisory-row">
+                <li>
+                    <img src="./images/ss_35.png" alt="">
+                    <div class="box">
+                    <p class="tit">这是一个文章的标题文字</p>
+                    <p class="txt">这是一篇文章的内容这是一篇文章的内容</p>
+                    <div class="Views">
+                        <span>来源：中国教育网</span>
+                        <span><img src="./images/眼睛.png" alt="">1000</span>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                    <img src="./images/ss_35.png" alt="">
+                </li>
+                <li>
+                    <img src="./images/ss_35.png" alt="">
+                </li>
+                <li>
+                    <img src="./images/ss_35.png" alt="">
+                </li>
+            </ul>
+            <h1>合作•校•联盟 / 课程•专家•联盟</h1>
+            <ul class="advisory-row">
+                    <li>
+                        <img src="./images/ss_35.png" alt="">
+                       
+                    </li>
+                    <li>
+                        <img src="./images/ss_35.png" alt="">
+                    </li>
+                    <li>
+                        <img src="./images/ss_35.png" alt="">
+                    </li>
+                    <li>
+                        <img src="./images/ss_35.png" alt="">
+                    </li>
+                </ul>
+                <ul class="advisory-row">
+                        <li>
+                            <img src="./images/ss_35.png" alt="">
+                        </li>
+                        <li>
+                            <img src="./images/ss_35.png" alt="">
+                        </li>
+                        <li>
+                            <img src="./images/ss_35.png" alt="">
+                        </li>
+                        <li>
+                            <img src="./images/ss_35.png" alt="">
+                        </li>
+                    </ul>
+
+        </div>
+    </div>
+    <!-- 底部 -->
+    <div class="footer">
+        <div class="footer-box">
+            <h2>合作伙伴</h2>
+            <p>COOPERATIVE PARTNER</p>
+
+            <ul class="Content-partners">
+                <li>
+                    <img src="images/footer-01.png">
+                </li>
+                <li>
+                    <img src="images/footer-02.png">
+                </li>
+                <li>
+                    <img src="images/footer-03.png">
+                </li>
+                <li>
+                    <img src="images/footer-04.png">
+                </li>
+                <li>
+                    <img src="images/footer-05.png">
+                </li>
+                <li>
+                    <img src="images/footer-06.png">
+                </li>
+                <li>
+                    <img src="images/footer-07.png">
+                </li>
+            </ul>
+
+
+            <span class="line"></span>
+
+            <div class="footer-footer">
+                <ul class="footer-footer-left">
+                    <li>
+                        <a href="#">关于我们</a>
+                    </li>
+                    <span>|</span>
+                    <li>
+                        <a href="#">联系我们</a>
+                    </li>
+                    <span>|</span>
+                    <li>
+                        <a href="#">服务定制</a>
+                    </li>
+                    <span>|</span>
+                    <li>
+                        <a href="#">帮助中心</a>
+                    </li>
+                </ul>
+
+
+                <span>合思科技 版权所有 赣ICP备16000522号-1 2019-AndThink Copyright AndThink InformationTech.All rights
+                    reservered</span>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+
+    <script src="./js/vue.js"></script>
+    <!-- <script src="json.js"></script> -->
+    <!-- <script type="text/javascript" src="//www.jb51.net/jslib/jquery/jquery.min.js"></script> -->
+    <!-- <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script> -->
+    <script>
+
+
+//  import data from '01.json';
+
+        // var data=require('01.json');
+        // console.log(data);
+
+
+        
+
+
+       var app = new Vue({
+        el: '#app',
+          data:{
+              dataList:[],
+            // dataList:[
+            // {
+            //     "name":"首页"
+               
+            // },
+            // {
+            //     "name":"找名校"
+                
+            // },
+            // {
+            //     "name":"找名师"
+            // }
+            // ],
+          },
+          created:function(){
+             
+            var self=this; 
+            var xhr = new XMLHttpRequest();
+			xhr.open("GET","/js/01.json",true);
+			xhr.onload = function(){
+				if (this.status == 200) {
+					// console.log(this.responseText);
+					var data = JSON.parse(this.responseText);
+					// console.log(user);
+                    self.dataList=data.list;
+				}
+			}
+
+			xhr.send();
+          },
+           
+        })
+    </script>
+
+</body>
+
+</html>
